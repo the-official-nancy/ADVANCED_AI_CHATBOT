@@ -75,5 +75,7 @@ You can easily expand the chatbot by adding new entries in intents.json, for exa
 Then re-run:
 python ai_chatbot.py
 
-AUTHOR
+AUTHOR -
 NANCY AHAKE
+
+Feel free to make changes.
