@@ -1,0 +1,251 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "yo"],
+      "responses": ["Hey there! How can I assist you today?", "Hello 👋 What brings you here?", "Hi! How are you doing today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "talk soon"],
+      "responses": ["Goodbye! Have a great day 🌞", "See you soon!", "Take care 👋"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "much appreciated", "thx", "thanks a lot"],
+      "responses": ["You're welcome!", "No problem 😊", "Glad I could help!"]
+    },
+
+    {
+      "tag": "time",
+      "patterns": ["what time is it", "current time", "tell me the time"],
+      "responses": ["It’s {current_time} right now. ⏰"]
+    },
+    {
+      "tag": "date",
+      "patterns": ["what's the date today", "today's date", "what day is it"],
+      "responses": ["Today is {current_date}. 📅"]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["what's the weather", "today's weather", "is it raining", "weather forecast"],
+      "responses": ["It looks like {weather_description} with a temperature around {temp}°C. ☁️"]
+    },
+
+    {
+      "tag": "daily_todo",
+      "patterns": ["help me plan my day", "create a to do list", "plan my schedule", "daily routine"],
+      "responses": [
+        "Here’s a productive daily plan:\n1️⃣ Exercise\n2️⃣ Work/Study\n3️⃣ Lunch break\n4️⃣ Relax or read\n5️⃣ Reflect on your goals ✨"
+      ]
+    },
+    {
+      "tag": "reminder",
+      "patterns": ["set a reminder", "remind me to call mom", "set alarm", "remind me to drink water"],
+      "responses": ["Got it! I’ll remind you at the right time ⏰"]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["motivate me", "inspire me", "say something inspiring"],
+      "responses": [
+        "Every day is a new chance to grow 🌱",
+        "You’ve got this 💪 — keep pushing forward!",
+        "Success starts with the courage to begin 🚀"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "make me laugh"],
+      "responses": [
+        "Why did the computer go to therapy? It had too many bytes! 😂",
+        "Parallel lines have so much in common… it’s a shame they’ll never meet 😆"
+      ]
+    },
+    {
+      "tag": "quote",
+      "patterns": ["quote of the day", "give me a quote"],
+      "responses": [
+        "“The best way to predict the future is to create it.” — Peter Drucker",
+        "“It always seems impossible until it’s done.” — Nelson Mandela"
+      ]
+    },
+
+    {
+      "tag": "science",
+      "patterns": ["what is photosynthesis", "define gravity", "what is dna"],
+      "responses": [
+        "Photosynthesis is the process by which plants use sunlight to produce food 🌿.",
+        "Gravity is the force that attracts objects toward one another 🌍.",
+        "DNA carries the genetic instructions of life 🧬."
+      ]
+    },
+    {
+      "tag": "space",
+      "patterns": ["tell me about space", "what is a black hole", "planets info"],
+      "responses": [
+        "A black hole is a region in space where gravity is so strong even light cannot escape 🌌.",
+        "Space is vast — there are more stars than grains of sand on Earth ✨."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": ["who discovered america", "when was world war 2", "first president of usa"],
+      "responses": [
+        "Christopher Columbus reached America in 1492 (though indigenous people lived there long before).",
+        "World War II lasted from 1939 to 1945.",
+        "George Washington was the first President of the USA 🇺🇸."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["rules of football", "who won fifa world cup", "what is the olympics"],
+      "responses": [
+        "Football (soccer) is played between two teams aiming to score in the opponent’s goal ⚽.",
+        "The FIFA World Cup happens every 4 years — {latest_winner} won the most recent one 🏆.",
+        "The Olympics are global sports competitions held every four years 🌍."
+      ]
+    },
+
+    {
+      "tag": "support_greeting",
+      "patterns": ["i need help", "customer support", "can i talk to support", "help me please"],
+      "responses": [
+        "Sure! I’m here to help. Please describe the issue you’re facing 🛠️.",
+        "I can assist you with support requests — what seems to be the problem?"
+      ]
+    },
+    {
+      "tag": "order_issue",
+      "patterns": ["my order is late", "order not delivered", "where is my package", "track my order"],
+      "responses": [
+        "I’m sorry your order is delayed. You can track it using your order ID at {tracking_link}. 📦",
+        "Please check your email for shipping updates, or provide your order ID for tracking."
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": ["refund policy", "how to get refund", "return my product"],
+      "responses": [
+        "Our refund policy allows returns within 14 days with a valid receipt 💸.",
+        "To request a refund, visit {refund_link} or contact our support team."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": ["is this item in stock", "available products", "do you have this item"],
+      "responses": [
+        "Let me check — this item is currently {stock_status}. 🛍️",
+        "Yes! We have it in stock and ready to ship 🚚."
+      ]
+    },
+    {
+      "tag": "payment_help",
+      "patterns": ["payment failed", "can't pay", "payment issue"],
+      "responses": [
+        "Please ensure your card details are correct or try another payment method 💳.",
+        "If the issue persists, contact billing support at {support_email}."
+      ]
+    },
+
+    {
+      "tag": "product_info",
+      "patterns": ["tell me about this product", "product details", "what are the specs"],
+      "responses": [
+        "Here are the main specs: {product_specs}. For more, visit the product page 🔍.",
+        "This product features {product_highlights} and comes with a 1-year warranty."
+      ]
+    },
+    {
+      "tag": "place_order",
+      "patterns": ["buy this item", "order now", "add to cart"],
+      "responses": ["The item has been added to your cart 🛒. You can proceed to checkout."]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": ["cancel my order", "stop the shipment", "cancel purchase"],
+      "responses": [
+        "Order cancellation is possible within 12 hours of purchase. Please visit your account page to cancel."
+      ]
+    },
+    {
+      "tag": "delivery_info",
+      "patterns": ["how long is delivery", "delivery time", "when will i get my order"],
+      "responses": ["Delivery usually takes 3–5 business days 🚚.", "Your item should arrive by {delivery_date}."]
+    },
+
+    {
+      "tag": "health_tips",
+      "patterns": ["give me health tips", "how to stay healthy", "wellness advice"],
+      "responses": [
+        "Stay hydrated 💧, eat balanced meals 🥗, and sleep well 😴.",
+        "Regular exercise and a positive mindset do wonders for your health! 💪"
+      ]
+    },
+    {
+      "tag": "symptom_check",
+      "patterns": ["i have a headache", "i feel sick", "i have a fever", "cough and cold"],
+      "responses": [
+        "I’m not a doctor, but it sounds like you might want to rest and stay hydrated. 🤒 If symptoms persist, please see a healthcare professional.",
+        "That sounds uncomfortable. I suggest consulting a licensed doctor for a proper diagnosis 🏥."
+      ]
+    },
+    {
+      "tag": "appointment",
+      "patterns": ["book doctor appointment", "schedule a checkup", "i need to see a doctor"],
+      "responses": [
+        "You can schedule an appointment using our health portal: {appointment_link}. 🩺",
+        "Booking confirmed for your preferred doctor. You’ll get a confirmation email shortly 📧."
+      ]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": ["i feel stressed", "i feel anxious", "mental health help", "i'm sad"],
+      "responses": [
+        "It’s okay to feel that way sometimes 💙. Try deep breathing and self-care. If it persists, please talk to a counselor at {helpline_number}.",
+        "You’re not alone — reaching out for support is a brave step 💫."
+      ]
+    },
+
+    {
+      "tag": "study_tips",
+      "patterns": ["how to study better", "study tips", "how to focus while studying"],
+      "responses": [
+        "Study in short focused sessions (Pomodoro method 🍅), take breaks, and review your notes daily.",
+        "Avoid multitasking — focus on one topic at a time and stay consistent 📘."
+      ]
+    },
+    {
+      "tag": "subject_help",
+      "patterns": ["explain photosynthesis", "help with math", "explain physics concept"],
+      "responses": [
+        "Photosynthesis is when plants make food using sunlight 🌿.",
+        "Sure! I can explain math, science, or history concepts — what topic are you curious about?"
+      ]
+    },
+    {
+      "tag": "exam_prep",
+      "patterns": ["exam preparation tips", "how to prepare for exams", "study for test"],
+      "responses": [
+        "Revise daily, solve previous papers, and take mock tests 📚.",
+        "Consistency beats cramming — review a little every day before the exam."
+      ]
+    },
+    {
+      "tag": "career_guidance",
+      "patterns": ["career advice", "which field should i choose", "help with career planning"],
+      "responses": [
+        "Think about what you enjoy and what skills you have. Explore careers that align with both 🎯.",
+        "Choose a field that excites you — passion drives success 🚀."
+      ]
+    },
+
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Hmm, I’m not sure I understand. Could you rephrase that?",
+        "Sorry, I didn’t quite catch that — could you try again?"
+      ]
+    }
+  ]
+}
